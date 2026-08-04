@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables
+.env
+.env.*
+
+# MongoDB
+*.db
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Next.js
+node_modules/
+.next/
+out/
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+
+# Pytest
+.pytest_cache/
