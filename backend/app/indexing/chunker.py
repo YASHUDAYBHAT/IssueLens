@@ -8,12 +8,8 @@ class PythonChunker:
 
     def chunk_file(self, repository: str, file_path: Path):
 
-        source = file_path.read_text(
-            encoding="utf-8"
-        )
-
+        source = file_path.read_text(encoding="utf-8")
         lines = source.splitlines()
-
         tree = ast.parse(source)
 
         chunks = []
@@ -27,7 +23,7 @@ class PythonChunker:
                 class_stack.append(node.name)
 
                 chunk = "\n".join(
-                    lines[node.lineno - 1: node.end_lineno]
+                    lines[node.lineno - 1 : node.end_lineno]
                 )
 
                 chunks.append(
@@ -45,22 +41,19 @@ class PythonChunker:
                 )
 
                 self.generic_visit(node)
-
                 class_stack.pop()
 
             def visit_FunctionDef(self, node):
 
                 if class_stack:
-                    qualified = ".".join(
-                        class_stack + [node.name]
-                    )
+                    qualified = ".".join(class_stack + [node.name])
                     kind = "method"
                 else:
                     qualified = node.name
                     kind = "function"
 
                 chunk = "\n".join(
-                    lines[node.lineno - 1: node.end_lineno]
+                    lines[node.lineno - 1 : node.end_lineno]
                 )
 
                 chunks.append(
