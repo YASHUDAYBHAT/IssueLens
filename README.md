@@ -1,4 +1,4 @@
-# 🚀 IssueLens
+#  IssueLens
 
 > AI-powered GitHub Issue Intelligence Platform that helps developers search, analyze, and understand GitHub issues using semantic search and Large Language Models (LLMs).
 
@@ -27,9 +27,9 @@ IssueLens retrieves the most relevant issues based on semantic similarity rather
 
 ---
 
-## ✨ Features
+##  Features
 
-### ✅ Current
+###  Current
 
 - FastAPI Backend
 - MongoDB Atlas Integration
@@ -50,7 +50,7 @@ IssueLens retrieves the most relevant issues based on semantic similarity rather
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
              +----------------+
@@ -76,7 +76,7 @@ IssueLens retrieves the most relevant issues based on semantic similarity rather
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Backend
 
@@ -105,7 +105,7 @@ IssueLens retrieves the most relevant issues based on semantic similarity rather
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 IssueLens/
@@ -133,7 +133,7 @@ IssueLens/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Clone Repository
 
@@ -173,7 +173,7 @@ http://localhost:8000/docs
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 ### Phase 1
 
@@ -229,7 +229,7 @@ This project is licensed under the MIT License.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Yash Bhat**
 
