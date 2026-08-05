@@ -6,7 +6,7 @@ from app.api.routes.indexing import router as indexing_router
 from app.core.config import settings
 from app.db.database import ping_database
 from app.api.routes.search import router as search_router
-
+from app.api.routes.issues import router as issues_router
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     print(" Starting IssueLens...")
@@ -39,7 +39,7 @@ print("Repository routes:", repository_router.routes)
 print("Indexing routes:", indexing_router.routes)
 print("Search routes:", search_router.routes)
 print("Done registering routers.")
-
+app.include_router(issues_router)
 @app.get("/")
 async def root():
     return {"message": "Welcome to IssueLens"}
